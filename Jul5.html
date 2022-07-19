@@ -17,15 +17,41 @@
             body {
                 background-image: url('https://i.pinimg.com/564x/6a/aa/ab/6aaaab354709ef2fa16fbd72299c8f55.jpg');
                 background-size: cover;
-
             }
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+                top: 50%; 
+                position: relative;
+            }
+            body {
+    margin : 0;
+}
+
+.outer-container {
+    display: table;
+    width: 80%;
+    height: 120px;
+}
+.inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.centered-content {
+    display: inline-block;
+    text-align: left;
+    background: #fff;
+    padding : 20px;
+    border : 1px solid #000;
+}
             </style>
         <title>
             Table with Even & odd rows
         </title>
     </head>
     <body>
-        <table>
+        <table class="center">
             <tr class="heading">
                 <th>Name</th>
                 <th>Age</th>
@@ -48,5 +74,12 @@
                 <td>9870420421</td>
             </tr>
         </table>
+        <div class="outer-container">
+            <div class="inner-container">
+              <div class="centered-content">
+                 Center this!
+              </div>
+            </div>
+         </div>
     </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(216, 60, 177);
+        }
+        .whitebox{
+            background-color: aliceblue;
+            width: 349px;
+            margin-top: auto;
+            margin-bottom: 17px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 50px;
+        }
+        .mange-width-lg{
+            width: 305px;
+        }
+        input[type=text],textarea{
+            padding: 10px;
+            margin-top: 9px;
+            margin-bottom: 10px;
+        }
+        input[type=submit]{
+            color: #fff;
+            background-color: black;
+        }
+        h2{
+            text-align: center;
+        }
+        .button{
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="whitebox">
+    <h2> Contact Us</h2>
+
+    <form action="action_page.php">
+    <label for="firstname"> Your Name* </label><br>
+    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+    <lable for="lastname"> </lable>
+    <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br>
+    <label for="Email"> Email Address*</label><br>
+    <input type="text" id="email" class="mange-width-lg" name="email" placeholder="Eg. example@email.com"><br>
+    <label for="phonenumber"> Phone Number</label><br>
+    <input type="text" class="mange-width-lg" id="phonenumber" name="phonenumber" placeholder="Eg. +1800 00 0000"><br>
+    <label for="message"> Message*</label><br>
+    <textarea id="message" name="message" placeholder="Please enter your comments" class="mange-width-lg"></textarea><br>
+    <div class="button">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    </div>
+</body>
+</html>
